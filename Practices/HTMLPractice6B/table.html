@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>HTML Practice 6 - Tables</title>
+
+	<style type="text/css">
+		.center {
+			text-align: center;
+		}
+
+		.tablecenter {
+			margin: auto;
+			width: 550px;
+		}
+
+		.captionstyle {
+			color: #003300;
+			font-size: 1.5em;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+
+		.firstcol {
+			background-color: #CCCCCC;
+			width: 25%;
+		}
+
+		.days {
+			width: 15%;
+		}
+
+		.dayhead {
+			background-color: #99FF66;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center">
+		<table class="tablecenter" border="1" cellspacing="0" cellpadding="8">
+			<caption class="captionstyle">My Class Schedule</caption>
+			<colgroup class="firstcol"></colgroup>
+			<colgroup class="days" span="5"></colgroup>
+
+			<tr>
+				<th>Time</th>
+				<th class="dayhead">Monday</th>
+				<th class="dayhead">Tuesday</th>
+				<th class="dayhead">Wednesday</th>
+				<th class="dayhead">Thursday</th>
+				<th class="dayhead">Friday</th>
+			</tr>
+			<tr>
+				<td>9:00 AM</td>
+				<td>HTML</td>
+				<td>English</td>
+				<td>HTML</td>
+				<td>English</td>
+				<td rowspan="2">Open Lab / Advising</td>
+			</tr>
+			<tr>
+				<td>12:00 PM</td>
+				<td colspan="4">Lunch and Study Hall</td>
+			</tr>
+			<tr>
+				<td>3:00 PM</td>
+				<td colspan="5">Study Group / Homework</td>
+			</tr>
+		</table>
+	</div>
+
+
+
+</body>
+
+</html>
