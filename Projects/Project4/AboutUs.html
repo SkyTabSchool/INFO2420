@@ -4,33 +4,92 @@
 <head>
 	<meta charset="UTF-8">
 	<title>About Us: Rent A Pet</title>
-
 	<style>
 		body {
-			background-color: #947051;
-			color: #000000;
-			font-size: 125%;
-			font-family: Georgia, 'Times New Roman', Times, serif;
+			background: #FFF8F0;
+			color: #3B2F2F;
+			font-family: Georgia, serif;
+			line-height: 1.6;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 1rem 1.5rem;
 		}
 
-		h1 {
-			color: #20160D;
-		}
-
-		h2 {
-			color: #20160D;
+		h1,
+		h2,
+		h3 {
+			color: #2F6F6A;
 		}
 
 		a {
-			color: #3B4734;
+			color: #B4531A;
 		}
 
-		a:link {
-
+		a:visited {
+			color: #7A4A6B;
 		}
 
 		a:hover {
-			color: #647398;
+			color: #8A3D10;
+		}
+
+		hr {
+			border: none;
+			border-top: 2px solid #E07A3F;
+		}
+
+		blockquote {
+			background: #FDEBD3;
+			border-left: 5px solid #E07A3F;
+			margin: 1rem 0;
+			padding: 1rem 1.25rem;
+			border-radius: 0 8px 8px 0;
+		}
+
+		img.right {
+			float: right;
+		}
+
+		img.left {
+			float: left;
+		}
+
+		img {
+			padding: 7px;
+		}
+
+		table {
+			border: none;
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 1rem;
+			margin: 1rem 0;
+		}
+
+		caption {
+			background: #E07A3F;
+			color: #FFF8F0;
+			font-size: 1.4rem;
+			font-weight: bold;
+			padding: 0.5rem 1rem;
+			border: 2px solid #B4531A;
+			border-radius: 12px 12px 0 0;
+			text-align: left;
+		}
+
+		th {
+			background: #2F6F6A;
+			color: #FFF8F0;
+			font-size: 1.05rem;
+			padding: 0.6rem 1rem;
+			text-align: left;
+		}
+
+		td {
+			background: #FDEBD3;
+			color: #3B2F2F;
+			border-bottom: 2px solid #E07A3F;
+			padding: 0.5rem 1rem;
 		}
 	</style>
 </head>
@@ -40,7 +99,7 @@
 	<h1 id="Top">About Rent A Pet</h1>
 
 	<p><a href="#Beginning">Beginning</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Today">Today</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
-			href="#Unique">What Makes Us Unique</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#Sale">Sale Prices this Week</a>&nbsp;|&nbsp;&nbsp;<a href="#Press">Press Releases</a></p>
+			href="#Unique">What Makes Us Unique</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Sale">Sale Prices this Week</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Press">Press Releases</a></p>
 
 	<hr>
 
@@ -55,7 +114,10 @@
 
 	<p>George shared his idea with Carol and they began to look at the pros and cons related to start a small business
 		that would rent dogs for a day. Some of the advantages of this kind of business would be:</p>
-	<ul>
+	
+	<img src="Images/AboutUs/KidsDogSmall.jpg" width="250" height="223" alt="Two kids with a German Shephard" class="right" />
+
+		<ul>
 		<li>Renters could have access to the pet at their leisure</li>
 		<li>Renters could pick the pet they wanted</li>
 		<li>Renters could exercise with the pet</li>
@@ -95,6 +157,8 @@
 		Rent
 		a Pet also employs an animal trainer who works with the dogs and horses daily.</p>
 
+	<img src="Images/AboutUs/FrisbeeDogSm.jpg" width="250" height="160" alt="Dog catching a frisbee midair" class="left" />
+
 	<p>Rent a Pet has attracted many satisfied customers. The company frequently provides their services to senior
 		citizens
 		who reside in retirement homes that prohibit pet ownership. A senior can enjoy a dog or cat for the day and even
@@ -110,11 +174,12 @@
 	<hr>
 
 	<h2 id="Sale">Sale Prices this Week</h2>
-	<table>
+	<table id="Sale">
+		<caption>October 5-11</caption>
 		<tr>
-			<td>Animal</td>
-			<td>Normal Price</td>
-			<td>Sale Price</td>
+			<th>Animal</th>
+			<th>Normal Price</th>
+			<th>Sale Price</th>
 		</tr>
 		<tr>
 			<td>Dogs</td>
